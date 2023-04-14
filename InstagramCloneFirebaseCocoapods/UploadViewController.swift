@@ -71,7 +71,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                                 } else {
                                     self.alert(title: "Successfuly", message: "Post was created successfuly!!")
                                     self.descriptionText.text = ""
-                                    self.imageView.image = UIImage(named: "placeholder-image.jpg")
+                                    self.imageView.image = UIImage(named: "placeholder.png")
                                     self.tabBarController?.selectedIndex = 0
                                 }
                             }
