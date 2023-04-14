@@ -23,6 +23,13 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(selectImage))
         imageView.isUserInteractionEnabled = true
         imageView.addGestureRecognizer(tapGestureRecognizer)
+        
+        let tapCloseGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        self.view.addGestureRecognizer(tapCloseGesture)
+    }
+    
+    @objc func hideKeyboard() {
+        self.view.endEditing(true)
     }
     
     @objc func selectImage() {
@@ -39,7 +46,6 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         picker.dismiss(animated: true)
         if let image = info[.originalImage] as? UIImage {
             imageView.image = image
-            imageView.backgroundColor = .systemBackground
         }
     }
     
@@ -66,7 +72,6 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                                     self.alert(title: "Successfuly", message: "Post was created successfuly!!")
                                     self.descriptionText.text = ""
                                     self.imageView.image = UIImage(named: "placeholder-image.jpg")
-                                    self.imageView.backgroundColor = .systemRed.withAlphaComponent(0.5)
                                     self.tabBarController?.selectedIndex = 0
                                 }
                             }

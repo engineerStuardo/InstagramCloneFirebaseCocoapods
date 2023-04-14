@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0901079D8ED1F091C1CB7E64 /* Pods_InstagramCloneFirebaseCocoapods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7A409166528F00626B8827 /* Pods_InstagramCloneFirebaseCocoapods.framework */; };
+		74AD91EE070503D611D06928 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7A2DB108E840B525A1A294 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 		B4128F5529E6CE530091C177 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4128F5429E6CE530091C177 /* FeedCell.swift */; };
+		B4DC624A29E8B9D9002C1596 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DC624929E8B9D9002C1596 /* NotificationService.swift */; };
+		B4DC624E29E8B9D9002C1596 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B4DC624729E8B9D9002C1596 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B4F158C729DF70B300499450 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F158C629DF70B300499450 /* AppDelegate.swift */; };
 		B4F158C929DF70B300499450 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F158C829DF70B300499450 /* SceneDelegate.swift */; };
 		B4F158CB29DF70B300499450 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F158CA29DF70B300499450 /* ViewController.swift */; };
@@ -21,11 +24,43 @@
 		B4F158E129DF792800499450 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F158E029DF792800499450 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B4DC624C29E8B9D9002C1596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4F158BB29DF70B300499450 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4DC624629E8B9D9002C1596;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B4DC624F29E8B9D9002C1596 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B4DC624E29E8B9D9002C1596 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		099FB318FD955469D22E1908 /* Pods-InstagramCloneFirebaseCocoapods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramCloneFirebaseCocoapods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-InstagramCloneFirebaseCocoapods-OneSignalNotificationServiceExtension/Pods-InstagramCloneFirebaseCocoapods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		1C5D8CE4A664F26057C4DAFC /* Pods-InstagramCloneFirebaseCocoapods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramCloneFirebaseCocoapods.release.xcconfig"; path = "Target Support Files/Pods-InstagramCloneFirebaseCocoapods/Pods-InstagramCloneFirebaseCocoapods.release.xcconfig"; sourceTree = "<group>"; };
+		3D7A2DB108E840B525A1A294 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		837D1D4B71957F23F7C64B93 /* Pods-InstagramCloneFirebaseCocoapods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramCloneFirebaseCocoapods.debug.xcconfig"; path = "Target Support Files/Pods-InstagramCloneFirebaseCocoapods/Pods-InstagramCloneFirebaseCocoapods.debug.xcconfig"; sourceTree = "<group>"; };
+		89F2492E3CE67DDDDA8F9225 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		94B9EA2089691E2D052A8079 /* Pods-InstagramCloneFirebaseCocoapods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramCloneFirebaseCocoapods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-InstagramCloneFirebaseCocoapods-OneSignalNotificationServiceExtension/Pods-InstagramCloneFirebaseCocoapods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		AC7A409166528F00626B8827 /* Pods_InstagramCloneFirebaseCocoapods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramCloneFirebaseCocoapods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4128F5429E6CE530091C177 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		B4B50FE329E8BD8C003526D7 /* InstagramCloneFirebaseCocoapods.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InstagramCloneFirebaseCocoapods.entitlements; sourceTree = "<group>"; };
+		B4DC624729E8B9D9002C1596 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4DC624929E8B9D9002C1596 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		B4DC624B29E8B9D9002C1596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4F158C329DF70B300499450 /* InstagramCloneFirebaseCocoapods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramCloneFirebaseCocoapods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F158C629DF70B300499450 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4F158C829DF70B300499450 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,9 +73,18 @@
 		B4F158DC29DF790600499450 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		B4F158DE29DF791A00499450 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		B4F158E029DF792800499450 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C647BE8AFF0359219C4EF6D2 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B4DC624429E8B9D9002C1596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74AD91EE070503D611D06928 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4F158C029DF70B300499450 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				AC7A409166528F00626B8827 /* Pods_InstagramCloneFirebaseCocoapods.framework */,
+				3D7A2DB108E840B525A1A294 /* Pods_OneSignalNotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -65,14 +110,28 @@
 			children = (
 				837D1D4B71957F23F7C64B93 /* Pods-InstagramCloneFirebaseCocoapods.debug.xcconfig */,
 				1C5D8CE4A664F26057C4DAFC /* Pods-InstagramCloneFirebaseCocoapods.release.xcconfig */,
+				94B9EA2089691E2D052A8079 /* Pods-InstagramCloneFirebaseCocoapods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				099FB318FD955469D22E1908 /* Pods-InstagramCloneFirebaseCocoapods-OneSignalNotificationServiceExtension.release.xcconfig */,
+				C647BE8AFF0359219C4EF6D2 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				89F2492E3CE67DDDDA8F9225 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4DC624829E8B9D9002C1596 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B4DC624929E8B9D9002C1596 /* NotificationService.swift */,
+				B4DC624B29E8B9D9002C1596 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 		B4F158BA29DF70B300499450 = {
 			isa = PBXGroup;
 			children = (
 				B4F158C529DF70B300499450 /* InstagramCloneFirebaseCocoapods */,
+				B4DC624829E8B9D9002C1596 /* OneSignalNotificationServiceExtension */,
 				B4F158C429DF70B300499450 /* Products */,
 				AFBDED7BF569851CCBB9E2B8 /* Pods */,
 				38495751EFD6461AA72831C5 /* Frameworks */,
@@ -83,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				B4F158C329DF70B300499450 /* InstagramCloneFirebaseCocoapods.app */,
+				B4DC624729E8B9D9002C1596 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +150,7 @@
 		B4F158C529DF70B300499450 /* InstagramCloneFirebaseCocoapods */ = {
 			isa = PBXGroup;
 			children = (
+				B4B50FE329E8BD8C003526D7 /* InstagramCloneFirebaseCocoapods.entitlements */,
 				B4F158C629DF70B300499450 /* AppDelegate.swift */,
 				B4F158C829DF70B300499450 /* SceneDelegate.swift */,
 				B4F158CA29DF70B300499450 /* ViewController.swift */,
@@ -109,6 +170,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B4DC624629E8B9D9002C1596 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4DC625229E8B9D9002C1596 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				1D2F77BC63615BB7B0F92F60 /* [CP] Check Pods Manifest.lock */,
+				B4DC624329E8B9D9002C1596 /* Sources */,
+				B4DC624429E8B9D9002C1596 /* Frameworks */,
+				B4DC624529E8B9D9002C1596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = B4DC624729E8B9D9002C1596 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		B4F158C229DF70B300499450 /* InstagramCloneFirebaseCocoapods */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4F158D729DF70B500499450 /* Build configuration list for PBXNativeTarget "InstagramCloneFirebaseCocoapods" */;
@@ -118,10 +197,12 @@
 				B4F158C029DF70B300499450 /* Frameworks */,
 				B4F158C129DF70B300499450 /* Resources */,
 				9CBF854CA3CC83E09B1B5F76 /* [CP] Embed Pods Frameworks */,
+				B4DC624F29E8B9D9002C1596 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B4DC624D29E8B9D9002C1596 /* PBXTargetDependency */,
 			);
 			name = InstagramCloneFirebaseCocoapods;
 			productName = InstagramCloneFirebaseCocoapods;
@@ -138,6 +219,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					B4DC624629E8B9D9002C1596 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					B4F158C229DF70B300499450 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -157,11 +241,19 @@
 			projectRoot = "";
 			targets = (
 				B4F158C229DF70B300499450 /* InstagramCloneFirebaseCocoapods */,
+				B4DC624629E8B9D9002C1596 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B4DC624529E8B9D9002C1596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4F158C129DF70B300499450 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,6 +268,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D2F77BC63615BB7B0F92F60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9CBF854CA3CC83E09B1B5F76 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,6 +332,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B4DC624329E8B9D9002C1596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4DC624A29E8B9D9002C1596 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4F158BF29DF70B300499450 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,6 +355,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4DC624D29E8B9D9002C1596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4DC624629E8B9D9002C1596 /* OneSignalNotificationServiceExtension */;
+			targetProxy = B4DC624C29E8B9D9002C1596 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B4F158CC29DF70B300499450 /* Main.storyboard */ = {
@@ -254,6 +384,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B4DC625029E8B9D9002C1596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C647BE8AFF0359219C4EF6D2 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X84U2MV584;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.InstagramCloneFirebase.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4DC625129E8B9D9002C1596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F2492E3CE67DDDDA8F9225 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X84U2MV584;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.InstagramCloneFirebase.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B4F158D529DF70B500499450 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -372,13 +554,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 837D1D4B71957F23F7C64B93 /* Pods-InstagramCloneFirebaseCocoapods.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InstagramCloneFirebaseCocoapods/InstagramCloneFirebaseCocoapods.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 953677F4FZ;
+				DEVELOPMENT_TEAM = X84U2MV584;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramCloneFirebaseCocoapods/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to use the photo library to upload a post";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -389,7 +574,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.italostuardo.InstagramCloneFirebaseCocoapods;
+				PRODUCT_BUNDLE_IDENTIFIER = com.InstagramCloneFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -401,13 +586,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C5D8CE4A664F26057C4DAFC /* Pods-InstagramCloneFirebaseCocoapods.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InstagramCloneFirebaseCocoapods/InstagramCloneFirebaseCocoapods.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 953677F4FZ;
+				DEVELOPMENT_TEAM = X84U2MV584;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramCloneFirebaseCocoapods/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to use the photo library to upload a post";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -418,7 +606,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.italostuardo.InstagramCloneFirebaseCocoapods;
+				PRODUCT_BUNDLE_IDENTIFIER = com.InstagramCloneFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -429,6 +617,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B4DC625229E8B9D9002C1596 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4DC625029E8B9D9002C1596 /* Debug */,
+				B4DC625129E8B9D9002C1596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B4F158BE29DF70B300499450 /* Build configuration list for PBXProject "InstagramCloneFirebaseCocoapods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
