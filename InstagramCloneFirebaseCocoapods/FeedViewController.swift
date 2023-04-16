@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import SDWebImage
+import OneSignal
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -19,6 +20,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     var imageArray = [String]()
     var documentIdArray = [String]()
     
+    let db = Firestore.firestore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,10 +30,45 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.dataSource = self
         
         getData()
+        getPlayerIds()
+    }
+    
+    func getPlayerIds() {
+        if let deviceState = OneSignal.getDeviceState() {
+            let userId = deviceState.userId
+            let email = Auth.auth().currentUser!.email!
+            
+            if let playerId = userId {
+                db.collection("PlayerId").whereField("email", isEqualTo: email).getDocuments { snapshot, error in
+                    if error == nil {
+                        if snapshot?.isEmpty == false, snapshot != nil {
+                            for document in snapshot!.documents {
+                                if let playerIdDB = document.get("playerId") as? String {
+                                    if playerId != playerIdDB {
+                                        self.addDocument(email: email, playerId: playerId)
+                                    }
+                                }
+                            }
+                        } else {
+                            self.addDocument(email: email, playerId: playerId)
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    
+    func addDocument(email: String, playerId: String) {
+        let playerIdDict = ["email": email, "playerId": playerId] as [String: Any]
+        self.db.collection("PlayerId").addDocument(data: playerIdDict) { error in
+            if error != nil {
+                print(error?.localizedDescription ?? "Error")
+            }
+        }
     }
     
     func getData() {
-        let db = Firestore.firestore()
         db.collection("Posts").order(by: "date", descending: true).addSnapshotListener { snapshot, error in
             if error != nil {
                 print(error?.localizedDescription ?? "Error")

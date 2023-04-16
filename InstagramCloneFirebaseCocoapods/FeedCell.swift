@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import OneSignal
 
 class FeedCell: UITableViewCell {
 
@@ -35,6 +36,31 @@ class FeedCell: UITableViewCell {
                 
                 let db = Firestore.firestore()
                 db.collection("Posts").document(id).setData(likeDict, merge: true)
+                
+                let userEmail = emailLabel.text!
+                db.collection("PlayerId").whereField("email", isEqualTo: userEmail).getDocuments { snapshot, error in
+                    if error == nil {
+                        if snapshot?.isEmpty == false, snapshot != nil {
+                            for document in snapshot!.documents {
+                                if let id = document.get("playerId") as? String {
+                                    let content: [String : Any] = [
+                                        "contents": ["en": "\(Auth.auth().currentUser!.email!) liked your post"],
+                                        "headings": ["en": "Instagram Clone"],
+                                        "include_player_ids": [id],
+                                        "data" : ["action" : "custom_action"]
+                                    ]
+                            
+                                    OneSignal.postNotification(content, onSuccess: {
+                                        osResultSuccessBlock in print("This is the result: \(osResultSuccessBlock.debugDescription)")
+                                        },
+                                        onFailure: {
+                                          osFailureBlock in print("This is the error: \(osFailureBlock.debugDescription)")
+                                    })
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
